@@ -39,3 +39,7 @@ pnpm-debug.log*
 .idea/
 *.swp
 *.sw?
+
+# Служебные файлы Claude Code (нужны локально, в репозиторий не идут)
+CLAUDE.md
+.claude/
