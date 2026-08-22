@@ -14,6 +14,7 @@
 | [if-else-reneder](./if-else-reneder) | Условный рендеринг | [Условный рендеринг в React](https://inteltone.ru/uslovnyj-rendering-v-react/#root) |
 | [react-life-cycle](./react-life-cycle) | Жизненный цикл компонента | [Жизненный цикл React](https://inteltone.ru/zhiznennyj-cikl-react/#root) |
 | [employee-list](./employee-list) | Списки, фильтрация и сортировка | [Как React работает со списками и ключами](https://inteltone.ru/kak-react-rabotaet-so-spiskami-i-kluchami/#root) |
+| [modals-app](./modals-app) | Композиция компонентов | [Собираем React-приложение из компонентов](https://inteltone.ru/sobiraem-react-prilozhenie-iz-komponentov/#root) |
 
 ## Запуск
 
