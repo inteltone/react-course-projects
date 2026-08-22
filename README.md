@@ -9,6 +9,7 @@
 |---|---|
 | [if-else-reneder](./if-else-reneder) | Условный рендеринг |
 | [react-life-cycle](./react-life-cycle) | Жизненный цикл компонента |
+| [employee-list](./employee-list) | Списки, фильтрация и сортировка |
 
 ## Запуск
 

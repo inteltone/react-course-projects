@@ -1,0 +1,50 @@
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+.app {
+	--tr: 0.3s ease-in-out;	
+	display: grid;	
+	width: min(1180px, 100%);
+	margin-inline: auto;
+    margin-block: 50px;
+	font-family: Montserrat, sans-serif;
+	font-size: 16px;
+	button {
+		justify-self: center;
+		display: grid;
+		place-items: center;
+		width: max-content;
+		padding: 15px 20px;
+		color: white;
+		background-color: #333;
+		font-size: 16px;
+		line-height: 1;
+		text-transform: uppercase;
+		border: none;
+		border-radius: 5px;
+		cursor: pointer;
+		transition: background-color var(--tr);
+		&:hover {
+			background-color: #666;
+		}
+		&.btn-del {
+			--w: 24px;
+			align-self: center;
+			width: var(--w);
+			height: var(--w);
+			padding: 0;
+			svg {
+				--w: 18px;
+				width: var(--w);
+				height: var(--w);
+			}
+		}
+	}
+	input {
+		width: 100%;
+	}	
+}

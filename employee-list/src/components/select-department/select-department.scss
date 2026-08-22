@@ -1,0 +1,18 @@
+.app-select-wrap{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 40px;
+}
+.app-select{
+    width: max-content;
+    padding: 10px;
+    font-size: inherit;
+    cursor: pointer;
+}
+@media (max-width: 550px) {
+    .app-select-wrap{
+        display: grid;
+        justify-items: center;       
+    }
+}

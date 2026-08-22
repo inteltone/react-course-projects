@@ -1,0 +1,59 @@
+
+.table-row,
+.table-head {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr) 24px;
+	gap: 20px;
+	text-align: center;
+	padding-block: 15px;
+	&>:first-child{
+		display: flex;
+		justify-self: center;
+		align-items: center;
+		gap:0 5px;
+		button{
+			width: min-content;
+			height: min-content;
+			padding: 0;
+			background-color: transparent;
+			color: #333;
+			font-weight: 700;
+			svg{
+				--w: 16px;
+				width: var(--w);
+				height: var(--w);
+				stroke: currentColor;
+				transition: transform var(--tr), opacity var(--tr);
+			}
+			&.sort-btn--none svg{
+				opacity: 0.35;
+			}
+			&.sort-btn--desc svg{
+				transform: rotate(180deg);
+			}
+		}
+	}
+}
+.table-row {
+    border-bottom: 1px solid #ccc;
+	span {
+		display: grid;
+		place-items: center;
+	}
+}
+.table-head {
+    background-color: #eee;
+	font-weight: 700;	
+}
+.app-list-empty {
+	text-align: center;
+}
+@media (max-width: 768px) {
+	.app-list-holder{
+		overflow-x: auto;
+		width: 100vw;		
+	}
+	.app-list-table{
+		width: 768px;
+	}
+}
