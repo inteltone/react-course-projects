@@ -1,0 +1,14 @@
+.user{
+    display: grid;     
+    padding: 2rem; 
+    word-break: break-word;   
+    li{
+        display: grid;
+        grid-template-columns: 12rem 1fr;
+        &:not(:last-child){
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: .1rem solid #aaa;
+        }
+    }
+}
