@@ -1,0 +1,277 @@
+:root {
+	--bg: #f5f5f7;
+	--card: #ffffff;
+	--text: #1a1a1a;
+	--muted: #6b6b6b;
+	--accent: #da4e84;
+	--accent-hover: #c23a6f;
+	--border: #e5e5e8;
+}
+
+.app.dark {
+	--bg: #1a1a2e;
+	--card: #23233c;
+	--text: #f0f0f5;
+	--muted: #a0a0b5;
+	--accent: #da4e84;
+	--accent-hover: #c23a6f;
+	--border: #34345a;
+}
+
+.app {
+	min-height: 100vh;
+	padding: 30px 20px;
+	background: var(--bg);
+	color: var(--text);
+	font-family: system-ui, -apple-system, sans-serif;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.app__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 15px;
+	max-width: 1100px;
+	margin: 0 auto 20px;
+	flex-wrap: wrap;
+}
+
+.app__title {
+	font-size: 28px;
+	margin: 0;
+}
+
+.app__header-actions {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+.app__cart-count {
+	color: var(--muted);
+	font-size: 15px;
+}
+
+.app__search {
+	max-width: 1100px;
+	margin: 0 auto 25px;
+}
+
+.app__search-input {
+	box-sizing: border-box;
+	width: 100%;
+	padding: 13px 16px;
+	font-size: 16px;
+	font-family: inherit;
+	color: var(--text);
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 10px;
+	outline: none;
+	transition: border-color 0.2s ease-in-out;
+}
+
+.app__search-input:focus {
+	border-color: var(--accent);
+}
+
+.app__main {
+	display: grid;
+	grid-template-columns: 1fr 380px;
+	gap: 25px;
+	align-items: start;
+	max-width: 1100px;
+	margin: 0 auto;
+}
+
+.section-title {
+	font-size: 20px;
+	margin: 0 0 15px;
+}
+
+.products__grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+	gap: 15px;
+}
+
+.products__empty,
+.cart__empty {
+	color: var(--muted);
+	font-size: 16px;
+}
+
+.product {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 18px;
+	transition: box-shadow 0.2s ease-in-out;
+}
+
+.product:hover {
+	box-shadow: 0 8px 20px -10px rgba(0, 0, 0, 0.25);
+}
+
+.product__name {
+	font-size: 17px;
+	margin: 0;
+}
+
+.product__price {
+	color: var(--muted);
+	font-size: 15px;
+	margin: 0;
+}
+
+.product .button {
+	margin-top: auto;
+}
+
+.cart {
+	position: sticky;
+	top: 20px;
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 12px;
+	padding: 18px;
+}
+
+.cart__items {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	margin-bottom: 15px;
+}
+
+.cart-item {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	align-items: center;
+	gap: 10px;
+	padding-bottom: 12px;
+	border-bottom: 1px solid var(--border);
+}
+
+.cart-item:last-of-type {
+	border-bottom: none;
+	padding-bottom: 0;
+}
+
+.cart-item__name {
+	font-size: 15px;
+}
+
+.cart-item__controls {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.cart-item__quantity {
+	min-width: 24px;
+	text-align: center;
+	font-variant-numeric: tabular-nums;
+}
+
+.cart-item__price {
+	color: var(--muted);
+	font-size: 14px;
+	white-space: nowrap;
+}
+
+.cart__footer {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	padding-top: 15px;
+	border-top: 1px solid var(--border);
+}
+
+.cart__total {
+	font-size: 17px;
+	font-weight: 700;
+	margin: 0;
+}
+
+.button {
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 600;
+	color: #fff;
+	background: var(--accent);
+	border: none;
+	border-radius: 8px;
+	padding: 10px 16px;
+	cursor: pointer;
+	transition: background-color 0.2s ease-in-out;
+}
+
+.button:hover {
+	background: var(--accent-hover);
+}
+
+.button--accent {
+	width: 100%;
+}
+
+.button--small {
+	padding: 6px 12px;
+	font-size: 15px;
+	line-height: 1;
+}
+
+.button--ghost {
+	background: transparent;
+	color: var(--accent);
+	border: 1px solid var(--accent);
+}
+
+.button--ghost:hover {
+	background: var(--accent);
+	color: #fff;
+}
+
+.button--link {
+	background: transparent;
+	color: var(--muted);
+	padding: 4px 8px;
+}
+
+.button--link:hover {
+	background: transparent;
+	color: var(--accent);
+}
+
+.theme-toggle {
+	font-family: inherit;
+	font-size: 15px;
+	font-weight: 600;
+	color: var(--text);
+	background: var(--card);
+	border: 1px solid var(--border);
+	border-radius: 8px;
+	padding: 10px 16px;
+	cursor: pointer;
+	transition: border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.theme-toggle:hover {
+	border-color: var(--accent);
+	color: var(--accent);
+}
+
+@media (max-width: 850px) {
+	.app__main {
+		grid-template-columns: 1fr;
+	}
+
+	.cart {
+		position: static;
+	}
+}

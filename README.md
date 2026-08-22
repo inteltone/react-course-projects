@@ -1,6 +1,6 @@
 # React Course Projects
 
-Учебные проекты, выполненные в ходе курса по React.
+Учебные проекты, выполненные по заданиям в уроках курса по React.
 Каждая папка — отдельное самостоятельное приложение на Vite.
 
 ## Проекты
@@ -15,6 +15,7 @@
 | [react-life-cycle](./react-life-cycle) | Жизненный цикл компонента | [Жизненный цикл React](https://inteltone.ru/zhiznennyj-cikl-react/#root) |
 | [employee-list](./employee-list) | Списки, фильтрация и сортировка | [Как React работает со списками и ключами](https://inteltone.ru/kak-react-rabotaet-so-spiskami-i-kluchami/#root) |
 | [modals-app](./modals-app) | Композиция компонентов | [Собираем React-приложение из компонентов](https://inteltone.ru/sobiraem-react-prilozhenie-iz-komponentov/#root) |
+| [hooks](./hooks) | Хуки | [Хуки — вся сила React в одной коробке](https://inteltone.ru/huki-vsja-sila-react-v-odnoj-korobke/#root) |
 
 ## Запуск
 
