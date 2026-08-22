@@ -5,11 +5,11 @@
 
 ## Проекты
 
-| Проект | Тема |
-|---|---|
-| [if-else-reneder](./if-else-reneder) | Условный рендеринг |
-| [react-life-cycle](./react-life-cycle) | Жизненный цикл компонента |
-| [employee-list](./employee-list) | Списки, фильтрация и сортировка |
+| Проект | Тема | Статья с демо |
+|---|---|---|
+| [if-else-reneder](./if-else-reneder) | Условный рендеринг | [Условный рендеринг в React](https://inteltone.ru/uslovnyj-rendering-v-react/) |
+| [react-life-cycle](./react-life-cycle) | Жизненный цикл компонента | [Жизненный цикл React](https://inteltone.ru/zhiznennyj-cikl-react/) |
+| [employee-list](./employee-list) | Списки, фильтрация и сортировка | [Как React работает со списками и ключами](https://inteltone.ru/kak-react-rabotaet-so-spiskami-i-kluchami/) |
 
 ## Запуск
 
