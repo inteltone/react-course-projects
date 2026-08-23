@@ -22,6 +22,7 @@
 | [react-render-props](./react-render-props) | Render Props | [Render Props — когда компонент решает, что рендерить](https://inteltone.ru/react-render-props/#root) |
 | [high-order-components](./high-order-components) | High Order Components | [High Order Components — фабрика крутых компонентов в React](https://inteltone.ru/react-high-order-components/#root) |
 | [react-portals](./react-portals) | Порталы | [Порталы в React — телепорт в любую точку DOM](https://inteltone.ru/react-portal/#root) |
+| [error-boundary](./error-boundary) | Error Boundaries | [Error Boundaries — работа с ошибками в React](https://inteltone.ru/error-boundaries-rabota-s-oshibkami-v-react/#root) |
 
 ## Запуск
 
