@@ -16,6 +16,7 @@
 | [employee-list](./employee-list) | Списки, фильтрация и сортировка | [Как React работает со списками и ключами](https://inteltone.ru/kak-react-rabotaet-so-spiskami-i-kluchami/#root) |
 | [modals-app](./modals-app) | Композиция компонентов | [Собираем React-приложение из компонентов](https://inteltone.ru/sobiraem-react-prilozhenie-iz-komponentov/#root) |
 | [hooks](./hooks) | Хуки | [Хуки — вся сила React в одной коробке](https://inteltone.ru/huki-vsja-sila-react-v-odnoj-korobke/#root) |
+| [custom-hooks](./custom-hooks) | Кастомные хуки | [Кастомные хуки в React](https://inteltone.ru/react-kastomnye-huki/#root) |
 
 ## Запуск
 
