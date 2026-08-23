@@ -20,6 +20,7 @@
 | [context-api](./context-api) | Context API | [React Context API](https://inteltone.ru/react-context/#root) |
 | [react-refs](./react-refs) | Refs | [Refs — прямой доступ к DOM и хранение данных без рендера](https://inteltone.ru/react-refs/#root) |
 | [react-render-props](./react-render-props) | Render Props | [Render Props — когда компонент решает, что рендерить](https://inteltone.ru/react-render-props/#root) |
+| [high-order-components](./high-order-components) | High Order Components | [High Order Components — фабрика крутых компонентов в React](https://inteltone.ru/react-high-order-components/#root) |
 
 ## Запуск
 
