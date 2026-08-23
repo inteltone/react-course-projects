@@ -1,0 +1,196 @@
+:root {
+	--app-bg: #f5f5f7;
+	--app-card: #ffffff;
+	--app-text: #1a1a1a;
+	--app-muted: #6b6b6b;
+	--app-accent: #4e7dda;
+	--app-accent-hover: #3a63b8;
+	--app-border: #e5e5e8;
+	--app-danger: #d9534f;
+	--app-success: #2f9e44;
+	--app-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+}
+
+.app-page_dark {
+	--app-bg: #1c1c1f;
+	--app-card: #2a2a2e;
+	--app-text: #e9e9ee;
+	--app-muted: #9b9ba4;
+	--app-accent: #6f9bf0;
+	--app-accent-hover: #8fb1f5;
+	--app-border: #3d3d43;
+	--app-danger: #e06c68;
+	--app-success: #4cc06a;
+	--app-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+}
+
+.app-page {
+	min-height: 100vh;
+	padding: 30px 20px;
+	background: var(--app-bg);
+	color: var(--app-text);
+	font-family: system-ui, -apple-system, sans-serif;
+	transition:
+		background-color 0.25s ease-in-out,
+		color 0.25s ease-in-out;
+}
+
+.app-page__header {
+	max-width: 1000px;
+	margin: 0 auto 25px;
+}
+
+.app-page__title {
+	font-size: 28px;
+	font-weight: 700;
+	margin: 0 0 6px;
+}
+
+.app-page__subtitle {
+	color: var(--app-muted);
+	font-size: 16px;
+	margin: 0;
+}
+
+.app-page__body {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 25px;
+	align-items: start;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
+.app-page__section {
+	background: var(--app-card);
+	border: 1px solid var(--app-border);
+	border-radius: 12px;
+	padding: 20px;
+	box-shadow: var(--app-shadow);
+	transition:
+		background-color 0.25s ease-in-out,
+		border-color 0.25s ease-in-out;
+}
+
+.app-page__section-title {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 0 12px;
+}
+
+.app-page__text {
+	font-size: 14px;
+	line-height: 1.5;
+	color: var(--app-muted);
+	margin: 0 0 14px;
+}
+
+/* Родитель с overflow: hidden — из него тултип-портал «вырывается» */
+.app-page__clip {
+	position: relative;
+	overflow: hidden;
+	max-height: 120px;
+	margin-top: 14px;
+	padding: 16px;
+	border: 1px dashed var(--app-border);
+	border-radius: 8px;
+	background: var(--app-bg);
+}
+
+.app-controls__button {
+	font-family: inherit;
+	font-size: 14px;
+	font-weight: 600;
+	color: var(--app-text);
+	background: var(--app-card);
+	border: 1px solid var(--app-border);
+	border-radius: 8px;
+	padding: 8px 14px;
+	cursor: pointer;
+	transition:
+		border-color 0.2s ease-in-out,
+		color 0.2s ease-in-out,
+		background-color 0.2s ease-in-out;
+}
+
+.app-controls__button:hover {
+	border-color: var(--app-accent);
+	color: var(--app-accent);
+}
+
+.app-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	background: rgba(0, 0, 0, 0.55);
+}
+
+.app-modal__content {
+	width: 100%;
+	max-width: 460px;
+	background: #ffffff;
+	color: #1a1a1a;
+	border-radius: 12px;
+	padding: 24px;
+	box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+.app-modal__title {
+	font-size: 20px;
+	font-weight: 700;
+	margin: 0 0 12px;
+}
+
+.app-modal__body {
+	font-size: 14px;
+	line-height: 1.5;
+	color: #4a4a4a;
+}
+
+.app-modal__body .app-controls__button {
+	margin-top: 16px;
+}
+
+.app-modal__text {
+	margin: 0;
+}
+
+.app-tooltip-anchor {
+	display: inline-flex;
+}
+
+.app-tooltip {
+	position: fixed;
+	transform: translateX(-50%);
+	max-width: 280px;
+	font-size: 13px;
+	line-height: 1.4;
+	text-align: center;
+	padding: 8px 12px;
+	border-radius: 8px;
+	box-shadow: var(--app-shadow);
+	pointer-events: none;
+	z-index: 1100;
+}
+
+.app-tooltip_light {
+	background: #ffffff;
+	color: #1a1a1a;
+	border: 1px solid #e5e5e8;
+}
+
+.app-tooltip_dark {
+	background: #2a2a2e;
+	color: #e9e9ee;
+	border: 1px solid #3d3d43;
+}
+
+@media (max-width: 850px) {
+	.app-page__body {
+		grid-template-columns: 1fr;
+	}
+}
