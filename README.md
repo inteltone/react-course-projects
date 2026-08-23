@@ -18,6 +18,7 @@
 | [hooks](./hooks) | Хуки | [Хуки — вся сила React в одной коробке](https://inteltone.ru/huki-vsja-sila-react-v-odnoj-korobke/#root) |
 | [custom-hooks](./custom-hooks) | Кастомные хуки | [Кастомные хуки в React](https://inteltone.ru/react-kastomnye-huki/#root) |
 | [context-api](./context-api) | Context API | [React Context API](https://inteltone.ru/react-context/#root) |
+| [react-refs](./react-refs) | Refs | [Refs — прямой доступ к DOM и хранение данных без рендера](https://inteltone.ru/react-refs/#root) |
 
 ## Запуск
 
