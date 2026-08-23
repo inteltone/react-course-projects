@@ -17,6 +17,7 @@
 | [modals-app](./modals-app) | Композиция компонентов | [Собираем React-приложение из компонентов](https://inteltone.ru/sobiraem-react-prilozhenie-iz-komponentov/#root) |
 | [hooks](./hooks) | Хуки | [Хуки — вся сила React в одной коробке](https://inteltone.ru/huki-vsja-sila-react-v-odnoj-korobke/#root) |
 | [custom-hooks](./custom-hooks) | Кастомные хуки | [Кастомные хуки в React](https://inteltone.ru/react-kastomnye-huki/#root) |
+| [context-api](./context-api) | Context API | [React Context API](https://inteltone.ru/react-context/#root) |
 
 ## Запуск
 
