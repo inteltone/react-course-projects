@@ -23,7 +23,8 @@
 | [high-order-components](./high-order-components) | High Order Components | [High Order Components — фабрика крутых компонентов в React](https://inteltone.ru/react-high-order-components/#root) |
 | [react-portals](./react-portals) | Порталы | [Порталы в React — телепорт в любую точку DOM](https://inteltone.ru/react-portal/#root) |
 | [error-boundary](./error-boundary) | Error Boundaries | [Error Boundaries — работа с ошибками в React](https://inteltone.ru/error-boundaries-rabota-s-oshibkami-v-react/#root) |
-| [react-router](./react-router) | Маршрутизация | [Маршрутизация в React — навигация по компонентам](https://inteltone.ru/react-router/#root) |
+| [react-router](./react-router) | Маршрутизация | [Маршрутизация в React — навигация по компонентам](https://inteltone.ru/react-router) |
+| [server-side-rendering](./server-side-rendering) | SSR на Next.js | [SSR в Next.js: React на полной мощности](https://inteltone.ru/server-side-rendering-next-js-react) |
 
 ## Запуск
 

@@ -1,0 +1,270 @@
+:root {
+	--app-bg: #f3f4f6;
+	--app-surface: #ffffff;
+	--app-text: #111827;
+	--app-text-muted: #6b7280;
+	--app-accent: #2563eb;
+	--app-accent-hover: #1d4ed8;
+	--app-border: #e5e7eb;
+	--app-radius: 12px;
+	--app-shadow: 0 1px 3px rgba(17, 24, 39, 0.08);
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: var(--app-bg);
+	color: var(--app-text);
+	font-family:
+		-apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+		Arial, sans-serif;
+	line-height: 1.6;
+}
+
+a {
+	color: var(--app-accent);
+	text-decoration: none;
+}
+
+a:hover {
+	color: var(--app-accent-hover);
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 20px;
+}
+
+.app-header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 20px;
+	padding: 20px 0;
+	border-bottom: 1px solid var(--app-border);
+}
+
+.app-header__logo {
+	font-size: 22px;
+	font-weight: 700;
+	color: var(--app-text);
+}
+
+.app-nav {
+	display: flex;
+	gap: 8px;
+}
+
+.app-nav__link {
+	padding: 8px 14px;
+	border-radius: 8px;
+	color: var(--app-text-muted);
+	font-weight: 500;
+}
+
+.app-nav__link:hover {
+	background: var(--app-surface);
+	color: var(--app-accent);
+}
+
+.app-nav__link--active {
+	background: var(--app-surface);
+	color: var(--app-accent);
+	box-shadow: var(--app-shadow);
+}
+
+.app-main {
+	flex: 1;
+	padding: 32px 0;
+}
+
+.app-footer {
+	padding: 20px 0;
+	border-top: 1px solid var(--app-border);
+	color: var(--app-text-muted);
+	font-size: 14px;
+	text-align: center;
+}
+
+.app-title {
+	margin: 0 0 8px;
+	font-size: 32px;
+	line-height: 1.2;
+}
+
+.app-lead {
+	margin: 0 0 24px;
+	color: var(--app-text-muted);
+}
+
+.app-note {
+	display: inline-block;
+	margin-bottom: 24px;
+	padding: 6px 12px;
+	border-radius: 8px;
+	background: #eef2ff;
+	color: #3730a3;
+	font-size: 14px;
+}
+
+.posts-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+	gap: 20px;
+}
+
+.post-card {
+	display: flex;
+	flex-direction: column;
+	gap: 12px;
+	padding: 20px;
+	border: 1px solid var(--app-border);
+	border-radius: var(--app-radius);
+	background: var(--app-surface);
+	box-shadow: var(--app-shadow);
+}
+
+.post-card__author {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+}
+
+.post-card__avatar {
+	border-radius: 50%;
+}
+
+.post-card__author-name {
+	margin: 0;
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.post-card__author-email {
+	margin: 0;
+	color: var(--app-text-muted);
+	font-size: 13px;
+}
+
+.post-card__title {
+	margin: 0;
+	font-size: 18px;
+	line-height: 1.35;
+}
+
+.post-card__text {
+	display: -webkit-box;
+	margin: 0;
+	overflow: hidden;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	color: var(--app-text-muted);
+	font-size: 15px;
+}
+
+.post-card__link {
+	font-weight: 600;
+}
+
+.post-page {
+	background: var(--app-surface);
+	border: 1px solid var(--app-border);
+	border-radius: var(--app-radius);
+	box-shadow: var(--app-shadow);
+	padding: 32px;
+}
+
+.post-page__back {
+	display: inline-block;
+	margin-bottom: 24px;
+	font-weight: 600;
+}
+
+.post-page__title {
+	margin: 0 0 24px;
+	font-size: 28px;
+	line-height: 1.3;
+}
+
+.post-page__body {
+	margin: 0 0 24px;
+	white-space: pre-wrap;
+	color: #374151;
+}
+
+.post-page__author {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	padding-top: 20px;
+	border-top: 1px solid var(--app-border);
+}
+
+.post-page__avatar {
+	border-radius: 50%;
+}
+
+.post-page__author-name {
+	margin: 0;
+	font-weight: 600;
+}
+
+.post-page__author-email {
+	margin: 0;
+	color: var(--app-text-muted);
+	font-size: 14px;
+}
+
+.about-page {
+	background: var(--app-surface);
+	border: 1px solid var(--app-border);
+	border-radius: var(--app-radius);
+	box-shadow: var(--app-shadow);
+	padding: 32px;
+}
+
+.about-page__title {
+	margin: 0 0 16px;
+	font-size: 28px;
+}
+
+.about-page__text {
+	margin: 0 0 12px;
+	color: #374151;
+}
+
+.about-page__list {
+	margin: 0;
+	padding-left: 24px;
+}
+
+.about-page__list li {
+	margin-bottom: 6px;
+}
+
+@media (max-width: 768px) {
+	.app-header {
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.app-title {
+		font-size: 26px;
+	}
+
+	.post-page {
+		padding: 24px;
+	}
+}
