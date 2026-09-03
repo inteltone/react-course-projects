@@ -1,8 +1,13 @@
-import { useState } from "react"
+import { useRef, useState } from "react"
 import useFetch from "use-http"
 
 export function TaskForm({ onCreated }) {
 	const [title, setTitle] = useState("")
+	// Локальный счётчик для генерации уникальных id:
+	// JSONPlaceholder на POST всегда возвращает id: 201,
+	// поэтому без своего id все добавленные задачи склеиваются
+	// по одинаковому ключу в React.
+	const localIdRef = useRef(Date.now())
 
 	const { post, loading, error, response } = useFetch("/todos")
 
@@ -19,7 +24,8 @@ export function TaskForm({ onCreated }) {
 		})
 
 		if (response && response.ok) {
-			onCreated(created)
+			const localId = localIdRef.current++
+			onCreated({ ...created, id: localId, local: true })
 			setTitle("")
 		}
 	}
