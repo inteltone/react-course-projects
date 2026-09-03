@@ -26,6 +26,7 @@
 | [react-router](./react-router) | Маршрутизация | [Маршрутизация в React — навигация по компонентам](https://inteltone.ru/react-router) |
 | [server-side-rendering](./server-side-rendering) | SSR на Next.js | [SSR в Next.js: React на полной мощности](https://inteltone.ru/server-side-rendering-next-js-react) |
 | [react-axios](./react-axios) | HTTP-запросы через Axios | [Axios в React](https://inteltone.ru/react-axios/#root) |
+| [use-http](./use-http) | HTTP-запросы через use-http | [use-http — минималистичные запросы через хуки](https://inteltone.ru/use-http-minimalistichnye-zaprosy-cherez-khuki/) |
 
 ## Запуск
 
